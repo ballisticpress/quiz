@@ -107,7 +107,7 @@ function nextQuestion() {
                 loadNextQuestion(data.next_question);
             } else {
                 // Quiz completed, redirect to results
-                window.location.href = 'results.php';
+                window.location.href = '/results';
             }
         } else {
             showAlert(data.message || 'An error occurred', 'danger');
@@ -178,7 +178,7 @@ function submitQuiz() {
         hideLoading();
         
         if (data.success) {
-            window.location.href = 'results.php';
+            window.location.href = '/results';
         } else {
             showAlert(data.message || 'An error occurred', 'danger');
         }

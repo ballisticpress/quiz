@@ -107,13 +107,13 @@ include 'includes/header.php';
 
                     <!-- Action Buttons -->
                     <div class="d-flex justify-content-center gap-3 flex-wrap">
-                        <a href="quiz.php?new=1" class="btn btn-primary btn-lg btn-quiz">
+                        <a href="/quiz?new=1" class="btn btn-primary btn-lg btn-quiz">
                             <i class="bi bi-arrow-repeat me-2"></i>Take Another Quiz
                         </a>
                         <button class="btn btn-outline-primary btn-lg" onclick="toggleDetails()">
                             <i class="bi bi-list-ul me-2"></i>View Details
                         </button>
-                        <a href="admin/dashboard.php" class="btn btn-outline-secondary btn-lg">
+                        <a href="/admin" class="btn btn-outline-secondary btn-lg">
                             <i class="bi bi-speedometer2 me-2"></i>Dashboard
                         </a>
                     </div>

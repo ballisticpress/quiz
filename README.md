@@ -92,6 +92,7 @@ A comprehensive PHP-based quiz application with Bootstrap frontend, featuring us
 6. **Access the Application**
    - Open your browser and navigate to your domain or `http://localhost:8000`
    - The database comes pre-loaded with 20 sample questions
+   - URLs are clean without .php extensions (e.g., `/quiz` instead of `/quiz.php`)
 
 ## Usage Guide
 
@@ -116,7 +117,7 @@ A comprehensive PHP-based quiz application with Bootstrap frontend, featuring us
 ### For Administrators
 
 1. **Access Dashboard**
-   - Navigate to `/admin/dashboard.php`
+   - Navigate to `/admin` (automatically redirects to dashboard)
    - View overall statistics and user performance
 
 2. **Manage Questions**
@@ -182,7 +183,7 @@ The application comes with 20 pre-loaded questions covering:
 
 ### Adding More Questions
 
-1. Use the admin interface at `/admin/add_question.php`
+1. Use the admin interface at `/admin/add_question`
 2. Or directly insert into the database:
 ```sql
 INSERT INTO questions (question_text, option_a, option_b, option_c, option_d, correct_answer) 

@@ -83,10 +83,10 @@ include '../includes/header.php';
                 <p class="text-muted">View, edit, and manage your quiz questions</p>
             </div>
             <div class="btn-group" role="group">
-                <a href="add_question.php" class="btn btn-primary">
+                <a href="/admin/add_question" class="btn btn-primary">
                     <i class="bi bi-plus-circle me-2"></i>Add New Question
                 </a>
-                <a href="dashboard.php" class="btn btn-outline-secondary">
+                <a href="/admin" class="btn btn-outline-secondary">
                     <i class="bi bi-arrow-left me-2"></i>Back to Dashboard
                 </a>
             </div>
@@ -159,7 +159,7 @@ include '../includes/header.php';
                         <i class="bi bi-question-circle fs-1 text-muted mb-3"></i>
                         <h5 class="text-muted">No Questions Found</h5>
                         <p class="text-muted">Start by adding some quiz questions.</p>
-                        <a href="add_question.php" class="btn btn-primary">
+                        <a href="/admin/add_question" class="btn btn-primary">
                             <i class="bi bi-plus-circle me-2"></i>Add Your First Question
                         </a>
                     </div>

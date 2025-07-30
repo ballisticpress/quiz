@@ -106,7 +106,7 @@ include '../includes/header.php';
                 </div>
                 
                 <div class="mt-3">
-                    <a href="dashboard.php" class="btn btn-outline-primary">
+                    <a href="/admin" class="btn btn-outline-primary">
                         <i class="bi bi-arrow-left me-2"></i>Back to Dashboard
                     </a>
                 </div>

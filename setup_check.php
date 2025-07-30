@@ -219,10 +219,10 @@ if (!$extensions_ok) $overall_status = false;
                                     </h5>
                                     <p class="mb-3">Your quiz application is properly configured and ready to use.</p>
                                     <div class="d-grid gap-2 d-md-flex justify-content-md-center">
-                                        <a href="index.php" class="btn btn-success btn-lg me-md-2">
+                                        <a href="/" class="btn btn-success btn-lg me-md-2">
                                             <i class="bi bi-play-circle-fill me-2"></i>Start Using Quiz App
                                         </a>
-                                        <a href="admin/dashboard.php" class="btn btn-outline-success btn-lg">
+                                        <a href="/admin" class="btn btn-outline-success btn-lg">
                                             <i class="bi bi-speedometer2 me-2"></i>Admin Dashboard
                                         </a>
                                     </div>

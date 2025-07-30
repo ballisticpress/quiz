@@ -71,7 +71,7 @@ include '../includes/header.php';
                 </h1>
                 <p class="text-muted">Create a new quiz question with multiple choice answers</p>
             </div>
-            <a href="dashboard.php" class="btn btn-outline-secondary">
+            <a href="/admin" class="btn btn-outline-secondary">
                 <i class="bi bi-arrow-left me-2"></i>Back to Dashboard
             </a>
         </div>

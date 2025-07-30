@@ -51,7 +51,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             $_SESSION['quiz_started'] = false;
             
             // Redirect to quiz
-            header('Location: quiz.php');
+            header('Location: /quiz');
             exit();
             
         } catch (Exception $e) {

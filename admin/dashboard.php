@@ -88,10 +88,10 @@ include '../includes/header.php';
         </div>
         <div class="col-auto">
             <div class="btn-group" role="group">
-                <a href="add_question.php" class="btn btn-primary">
+                <a href="/admin/add_question" class="btn btn-primary">
                     <i class="bi bi-plus-circle me-2"></i>Add Question
                 </a>
-                <a href="manage_questions.php" class="btn btn-outline-primary">
+                <a href="/admin/manage_questions" class="btn btn-outline-primary">
                     <i class="bi bi-list-ul me-2"></i>Manage Questions
                 </a>
             </div>
@@ -358,7 +358,7 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 function viewUserDetails(userId) {
-    window.location.href = `user_details.php?id=${userId}`;
+    window.location.href = `/admin/user_details?id=${userId}`;
 }
 
 // Export functionality
