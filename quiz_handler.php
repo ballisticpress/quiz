@@ -243,28 +243,28 @@ function generateQuestionHTML($question, $current_index, $total_questions, $prog
             <div class="answer-options">
                 <input type="hidden" id="question-id" value="<?php echo $question['id']; ?>">
                 
-                <div class="answer-option" data-answer="a">
+                <div class="answer-option" data-answer="a" role="button" tabindex="0">
                     <div class="d-flex align-items-center">
                         <span class="badge bg-primary me-3 fs-5">A</span>
                         <span class="flex-grow-1"><?php echo htmlspecialchars($question['option_a']); ?></span>
                     </div>
                 </div>
                 
-                <div class="answer-option" data-answer="b">
+                <div class="answer-option" data-answer="b" role="button" tabindex="0">
                     <div class="d-flex align-items-center">
                         <span class="badge bg-primary me-3 fs-5">B</span>
                         <span class="flex-grow-1"><?php echo htmlspecialchars($question['option_b']); ?></span>
                     </div>
                 </div>
                 
-                <div class="answer-option" data-answer="c">
+                <div class="answer-option" data-answer="c" role="button" tabindex="0">
                     <div class="d-flex align-items-center">
                         <span class="badge bg-primary me-3 fs-5">C</span>
                         <span class="flex-grow-1"><?php echo htmlspecialchars($question['option_c']); ?></span>
                     </div>
                 </div>
                 
-                <div class="answer-option" data-answer="d">
+                <div class="answer-option" data-answer="d" role="button" tabindex="0">
                     <div class="d-flex align-items-center">
                         <span class="badge bg-primary me-3 fs-5">D</span>
                         <span class="flex-grow-1"><?php echo htmlspecialchars($question['option_d']); ?></span>

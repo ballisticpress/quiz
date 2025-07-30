@@ -43,6 +43,8 @@ body {
     transition: all 0.3s ease;
     display: block;
     text-decoration: none;
+    user-select: none;
+    width: 100%;
 }
 
 .answer-option:hover {

@@ -28,10 +28,13 @@ document.addEventListener('DOMContentLoaded', function() {
  * Initialize quiz functionality
  */
 function initializeQuiz() {
-    // Handle answer selection
+    // Handle answer selection - use event delegation for better compatibility
     document.addEventListener('click', function(e) {
-        if (e.target.classList.contains('answer-option')) {
-            selectAnswer(e.target);
+        // Check if clicked element or its parent is an answer option
+        let answerOption = e.target.closest('.answer-option');
+        if (answerOption) {
+            e.preventDefault();
+            selectAnswer(answerOption);
         }
     });
     
