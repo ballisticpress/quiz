@@ -1,0 +1,204 @@
+/* Custom Quiz Application Styles */
+
+/* General Styling */
+body {
+    background-color: #f8f9fa;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Card Enhancements */
+.card {
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+}
+
+.card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* Quiz Question Cards */
+.question-card {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    margin-bottom: 2rem;
+}
+
+.question-card .card-header {
+    background: rgba(255, 255, 255, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Answer Options */
+.answer-option {
+    background: rgba(255, 255, 255, 0.9);
+    color: #333;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 10px 0;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: block;
+    text-decoration: none;
+}
+
+.answer-option:hover {
+    background: rgba(255, 255, 255, 1);
+    border-color: #007bff;
+    transform: translateX(5px);
+    color: #333;
+    text-decoration: none;
+}
+
+.answer-option.selected {
+    background: #007bff;
+    color: white;
+    border-color: #0056b3;
+}
+
+.answer-option.correct {
+    background: #28a745;
+    color: white;
+    border-color: #1e7e34;
+}
+
+.answer-option.incorrect {
+    background: #dc3545;
+    color: white;
+    border-color: #c82333;
+}
+
+/* Progress Bar */
+.quiz-progress {
+    height: 8px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.3);
+    overflow: hidden;
+}
+
+.quiz-progress .progress-bar {
+    border-radius: 10px;
+    transition: width 0.6s ease;
+}
+
+/* Dashboard Cards */
+.stats-card {
+    background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+    color: white;
+    border-radius: 20px;
+}
+
+.stats-card .card-body {
+    padding: 2rem;
+}
+
+.stats-card h3 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+/* User Performance Cards */
+.performance-card {
+    background: white;
+    border-left: 4px solid #007bff;
+    transition: border-left-color 0.3s ease;
+}
+
+.performance-card:hover {
+    border-left-color: #28a745;
+}
+
+/* Results Page */
+.results-container {
+    text-align: center;
+    padding: 3rem 0;
+}
+
+.score-display {
+    font-size: 4rem;
+    font-weight: bold;
+    color: #28a745;
+    margin: 2rem 0;
+}
+
+.score-percentage {
+    font-size: 2rem;
+    color: #6c757d;
+}
+
+/* Buttons */
+.btn-quiz {
+    border-radius: 25px;
+    padding: 12px 30px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+}
+
+.btn-quiz:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Loading Animation */
+.loading {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 3px solid rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    border-top-color: #fff;
+    animation: spin 1s ease-in-out infinite;
+}
+
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .stats-card h3 {
+        font-size: 2rem;
+    }
+    
+    .score-display {
+        font-size: 3rem;
+    }
+    
+    .answer-option {
+        padding: 12px;
+        margin: 8px 0;
+    }
+}
+
+/* Table Styling */
+.table-hover tbody tr:hover {
+    background-color: rgba(0, 123, 255, 0.1);
+}
+
+/* Form Styling */
+.form-control:focus {
+    border-color: #667eea;
+    box-shadow: 0 0 0 0.2rem rgba(102, 126, 234, 0.25);
+}
+
+/* Alert Styling */
+.alert {
+    border-radius: 10px;
+    border: none;
+}
+
+/* Animation for page transitions */
+.fade-in {
+    animation: fadeIn 0.5s ease-in;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
